@@ -128,6 +128,9 @@ export default function HomePage() {
               <Link href="#servicos" className="text-gray-300 hover:text-white transition-colors">
                 Serviços
               </Link>
+              <Link href="#portfolio" className="text-gray-300 hover:text-white transition-colors">
+                Portfólio
+              </Link>
               <Link href="#valores" className="text-gray-300 hover:text-white transition-colors">
                 Valores
               </Link>
@@ -228,75 +231,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Missão, Visão e Valores */}
-        <section id="valores" className="py-20" aria-labelledby="valores-heading">
-          <div className="container mx-auto px-4 lg:px-6">
-            <div className="text-center mb-16">
-              <Badge variant="outline" className="border-blue-400/50 text-blue-400 bg-blue-400/10 mb-4">
-                Nossos Pilares
-              </Badge>
-              <h2 id="valores-heading" className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Missão, Visão e Valores da Hudsons Software
-              </h2>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <Card className="bg-gradient-to-br from-blue-900/50 to-blue-800/50 border-blue-400/50 backdrop-blur-sm">
-                <CardHeader>
-                  <Target className="h-8 w-8 text-blue-200 mb-2" aria-hidden="true" />
-                  <CardTitle className="text-white text-lg font-bold">Nossa Missão</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-100 leading-relaxed font-medium">
-                    Entregar soluções digitais de ponta que cumpram com excelência os requisitos propostos, superando as
-                    expectativas dos clientes e contribuindo ativamente para o sucesso de seus projetos.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-purple-900/50 to-purple-800/50 border-purple-400/50 backdrop-blur-sm">
-                <CardHeader>
-                  <Eye className="h-8 w-8 text-purple-200 mb-2" aria-hidden="true" />
-                  <CardTitle className="text-white text-lg font-bold">Nossa Visão</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-100 leading-relaxed font-medium">
-                    Ser reconhecida como uma das principais agências de software em Angola e no continente africano,
-                    pela qualidade técnica, compromisso com os clientes e inovação contínua.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-green-900/50 to-green-800/50 border-green-400/50 backdrop-blur-sm">
-                <CardHeader>
-                  <Heart className="h-8 w-8 text-green-200 mb-2" aria-hidden="true" />
-                  <CardTitle className="text-white text-lg font-bold">Nossos Valores</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-green-200" aria-hidden="true" />
-                      <span className="text-gray-100 text-sm font-medium">Compromisso com o cliente</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Lightbulb className="h-4 w-4 text-yellow-200" aria-hidden="true" />
-                      <span className="text-gray-100 text-sm font-medium">Inovação contínua</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Shield className="h-4 w-4 text-blue-200" aria-hidden="true" />
-                      <span className="text-gray-100 text-sm font-medium">Transparência</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <TrendingUp className="h-4 w-4 text-purple-200" aria-hidden="true" />
-                      <span className="text-gray-100 text-sm font-medium">Crescimento conjunto</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         {/* Serviços */}
         <section id="servicos" className="py-20 bg-black/20" aria-labelledby="servicos-heading">
           <div className="container mx-auto px-4 lg:px-6">
@@ -393,6 +327,372 @@ export default function HomePage() {
                     Oferecemos mentoria para desenvolver as habilidades técnicas da sua equipe e acelerar projetos em
                     Angola.
                   </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Portfólio */}
+        <section id="portfolio" className="py-20" aria-labelledby="portfolio-heading">
+          <div className="container mx-auto px-4 lg:px-6">
+            <div className="text-center mb-16">
+              <Badge variant="outline" className="border-green-400/50 text-green-400 bg-green-400/10 mb-4">
+                Nosso Portfólio
+              </Badge>
+              <h2 id="portfolio-heading" className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Projetos Desenvolvidos
+              </h2>
+              <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+                Conheça alguns dos projetos que desenvolvemos para nossos clientes, demonstrando nossa expertise em
+                diferentes tecnologias e setores
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Projeto 1 - Sistema de Gestão */}
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <div className="h-48 bg-gradient-to-br from-blue-600/20 to-purple-600/20 flex items-center justify-center">
+                    <Code2 className="h-16 w-16 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <Badge variant="secondary" className="bg-blue-600/80 text-white">
+                      Sistema Web
+                    </Badge>
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-white">Sistema de Gestão Empresarial</CardTitle>
+                  <CardDescription className="text-gray-400">
+                    Plataforma completa para gestão de recursos empresariais
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Sistema desenvolvido para automatizar processos internos, controle de estoque, gestão financeira e
+                    relatórios gerenciais.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline" className="text-xs border-blue-400/50 text-blue-300">
+                      React
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-green-400/50 text-green-300">
+                      Node.js
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-purple-400/50 text-purple-300">
+                      PostgreSQL
+                    </Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400 text-sm">Cliente: Empresa Privada</span>
+                    <Button size="sm" variant="ghost" className="text-blue-400 hover:text-blue-300">
+                      Ver Detalhes
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Projeto 2 - E-commerce */}
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <div className="h-48 bg-gradient-to-br from-green-600/20 to-blue-600/20 flex items-center justify-center">
+                    <Globe className="h-16 w-16 text-green-400 group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <Badge variant="secondary" className="bg-green-600/80 text-white">
+                      E-commerce
+                    </Badge>
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-white">Plataforma de E-commerce</CardTitle>
+                  <CardDescription className="text-gray-400">
+                    Loja online completa com sistema de pagamentos
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Plataforma de vendas online com catálogo de produtos, carrinho de compras, integração com meios de
+                    pagamento e painel administrativo.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline" className="text-xs border-blue-400/50 text-blue-300">
+                      Next.js
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-yellow-400/50 text-yellow-300">
+                      Stripe
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-red-400/50 text-red-300">
+                      MongoDB
+                    </Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400 text-sm">Cliente: Startup</span>
+                    <Button size="sm" variant="ghost" className="text-green-400 hover:text-green-300">
+                      Ver Detalhes
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Projeto 3 - App Mobile */}
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <div className="h-48 bg-gradient-to-br from-purple-600/20 to-pink-600/20 flex items-center justify-center">
+                    <Smartphone className="h-16 w-16 text-purple-400 group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <Badge variant="secondary" className="bg-purple-600/80 text-white">
+                      Mobile App
+                    </Badge>
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-white">Aplicativo de Delivery</CardTitle>
+                  <CardDescription className="text-gray-400">App móvel para pedidos e entregas</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Aplicativo móvel para iOS e Android com sistema de pedidos, rastreamento em tempo real e integração
+                    com restaurantes.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline" className="text-xs border-blue-400/50 text-blue-300">
+                      React Native
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-green-400/50 text-green-300">
+                      Firebase
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-orange-400/50 text-orange-300">
+                      Maps API
+                    </Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400 text-sm">Cliente: Restaurante</span>
+                    <Button size="sm" variant="ghost" className="text-purple-400 hover:text-purple-300">
+                      Ver Detalhes
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Projeto 4 - Dashboard Analytics */}
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <div className="h-48 bg-gradient-to-br from-yellow-600/20 to-orange-600/20 flex items-center justify-center">
+                    <TrendingUp className="h-16 w-16 text-yellow-400 group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <Badge variant="secondary" className="bg-yellow-600/80 text-white">
+                      Dashboard
+                    </Badge>
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-white">Dashboard de Analytics</CardTitle>
+                  <CardDescription className="text-gray-400">
+                    Painel de controle com métricas e relatórios
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Dashboard interativo para visualização de dados, métricas de performance e geração de relatórios
+                    automatizados.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline" className="text-xs border-blue-400/50 text-blue-300">
+                      Vue.js
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-green-400/50 text-green-300">
+                      Chart.js
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-purple-400/50 text-purple-300">
+                      Python
+                    </Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400 text-sm">Cliente: Instituição</span>
+                    <Button size="sm" variant="ghost" className="text-yellow-400 hover:text-yellow-300">
+                      Ver Detalhes
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Projeto 5 - API Integration */}
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <div className="h-48 bg-gradient-to-br from-red-600/20 to-pink-600/20 flex items-center justify-center">
+                    <Zap className="h-16 w-16 text-red-400 group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <Badge variant="secondary" className="bg-red-600/80 text-white">
+                      API
+                    </Badge>
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-white">Sistema de Integração</CardTitle>
+                  <CardDescription className="text-gray-400">APIs robustas para integração de sistemas</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Desenvolvimento de APIs RESTful para integração entre diferentes sistemas empresariais e automação
+                    de processos.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline" className="text-xs border-blue-400/50 text-blue-300">
+                      Express.js
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-green-400/50 text-green-300">
+                      Docker
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-purple-400/50 text-purple-300">
+                      AWS
+                    </Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400 text-sm">Cliente: Corporação</span>
+                    <Button size="sm" variant="ghost" className="text-red-400 hover:text-red-300">
+                      Ver Detalhes
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Projeto 6 - Website Institucional */}
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <div className="h-48 bg-gradient-to-br from-indigo-600/20 to-blue-600/20 flex items-center justify-center">
+                    <Globe className="h-16 w-16 text-indigo-400 group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <Badge variant="secondary" className="bg-indigo-600/80 text-white">
+                      Website
+                    </Badge>
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-white">Website Institucional</CardTitle>
+                  <CardDescription className="text-gray-400">Site corporativo moderno e responsivo</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Website institucional com design moderno, otimizado para SEO e com sistema de gestão de conteúdo
+                    integrado.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline" className="text-xs border-blue-400/50 text-blue-300">
+                      Next.js
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-green-400/50 text-green-300">
+                      Tailwind
+                    </Badge>
+                    <Badge variant="outline" className="text-xs border-purple-400/50 text-purple-300">
+                      CMS
+                    </Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400 text-sm">Cliente: ONG</span>
+                    <Button size="sm" variant="ghost" className="text-indigo-400 hover:text-indigo-300">
+                      Ver Detalhes
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* CTA do Portfólio */}
+            <div className="text-center mt-16">
+              <Card className="bg-gradient-to-r from-green-900/30 to-blue-900/30 border-green-400/30 backdrop-blur-sm">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-white mb-4">Tem um projeto em mente?</h3>
+                  <p className="text-gray-200 mb-6 max-w-2xl mx-auto">
+                    Cada projeto é único e desenvolvemos soluções personalizadas para atender às necessidades
+                    específicas de cada cliente.
+                  </p>
+                  <Link href="mailto:hmateque@gmail.com?subject=Interesse em desenvolver um projeto&body=Olá,%0D%0A%0D%0ATenho interesse em desenvolver um projeto e gostaria de conversar sobre as possibilidades.%0D%0A%0D%0AObrigado!">
+                    <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+                      Vamos Desenvolver Juntos
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Missão, Visão e Valores */}
+        <section id="valores" className="py-20" aria-labelledby="valores-heading">
+          <div className="container mx-auto px-4 lg:px-6">
+            <div className="text-center mb-16">
+              <Badge variant="outline" className="border-blue-400/50 text-blue-400 bg-blue-400/10 mb-4">
+                Nossos Pilares
+              </Badge>
+              <h2 id="valores-heading" className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Missão, Visão e Valores da Hudsons Software
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <Card className="bg-gradient-to-br from-blue-900/50 to-blue-800/50 border-blue-400/50 backdrop-blur-sm">
+                <CardHeader>
+                  <Target className="h-8 w-8 text-blue-200 mb-2" aria-hidden="true" />
+                  <CardTitle className="text-white text-lg font-bold">Nossa Missão</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-100 leading-relaxed font-medium">
+                    Entregar soluções digitais de ponta que cumpram com excelência os requisitos propostos, superando as
+                    expectativas dos clientes e contribuindo ativamente para o sucesso de seus projetos.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-purple-900/50 to-purple-800/50 border-purple-400/50 backdrop-blur-sm">
+                <CardHeader>
+                  <Eye className="h-8 w-8 text-purple-200 mb-2" aria-hidden="true" />
+                  <CardTitle className="text-white text-lg font-bold">Nossa Visão</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-100 leading-relaxed font-medium">
+                    Ser reconhecida como uma das principais agências de software em Angola e no continente africano,
+                    pela qualidade técnica, compromisso com os clientes e inovação contínua.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-green-900/50 to-green-800/50 border-green-400/50 backdrop-blur-sm">
+                <CardHeader>
+                  <Heart className="h-8 w-8 text-green-200 mb-2" aria-hidden="true" />
+                  <CardTitle className="text-white text-lg font-bold">Nossos Valores</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-4 w-4 text-green-200" aria-hidden="true" />
+                      <span className="text-gray-100 text-sm font-medium">Compromisso com o cliente</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Lightbulb className="h-4 w-4 text-yellow-200" aria-hidden="true" />
+                      <span className="text-gray-100 text-sm font-medium">Inovação contínua</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Shield className="h-4 w-4 text-blue-200" aria-hidden="true" />
+                      <span className="text-gray-100 text-sm font-medium">Transparência</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <TrendingUp className="h-4 w-4 text-purple-200" aria-hidden="true" />
+                      <span className="text-gray-100 text-sm font-medium">Crescimento conjunto</span>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
